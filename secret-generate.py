@@ -20,7 +20,7 @@ file_data = {}
 for f in args.files:
     with open(f, "rb") as output:
         file_read = output.read()
-        file_data[f] = base64.b64encode(file_read).decode('UTF-8') 
+        file_data[f.split('/')[-1]] = base64.b64encode(file_read).decode('UTF-8') 
         
 data = {   
     "apiVersion": "v1",
