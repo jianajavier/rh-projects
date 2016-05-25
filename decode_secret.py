@@ -12,4 +12,4 @@ with open(args.f[0]) as data_json:
     data = json.load(data_json)["data"]
 
 for filename, b64data in data.iteritems():
-    print(filename+"\n"+"-----"+"\n"+base64.b64decode(b64data)+"\n")
+    print(filename+"\n"+"-----"+"\n"+base64.b64decode(b64data))
