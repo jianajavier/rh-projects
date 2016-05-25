@@ -4,13 +4,12 @@ import base64
 
 parser = argparse.ArgumentParser(description='Enter arguments')
 
-parser.add_argument("f", nargs=1, type=str)
+parser.add_argument("filename", nargs=1, type=str)
 
 args = parser.parse_args()
 data_json = ''
 
-
-with open(args.f[0]) as f:
+with open(args.filename[0]) as f:
     for line in f:
         if not line.strip().startswith("#"):
             data_json += line
