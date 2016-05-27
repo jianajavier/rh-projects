@@ -1,0 +1,7 @@
+---
+
+- hosts: localhost
+  name: testing
+  tasks:
+    - name: generate secret
+      secret-generate: name=nametesting label=labeltesting namespace=nstesting filename=secret files=test1,test2,test3,test4
