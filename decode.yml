@@ -4,4 +4,4 @@
   name: test-decode
   tasks:
     - name: decode_secret
-      decode_secret: jfile=test.json
+      decode_secret: jfile=testing.dcheung.secret
