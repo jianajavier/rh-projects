@@ -1,0 +1,7 @@
+---
+
+- hosts: localhost
+  name: test-decode
+  tasks:
+    - name: decode_secret
+      decode_secret: jfile=test.json
