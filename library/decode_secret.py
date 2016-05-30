@@ -2,7 +2,6 @@
 DOCUMENTATION = '''
 ---
 module: decode_secret
-short_description: Regenerate secret when configuration is updated
 description:
     - This module will take in a json file, ignore comments and decode any b64 data and output to stdout
     - Specify a json file
